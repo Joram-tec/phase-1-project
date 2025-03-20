@@ -5,6 +5,7 @@ const ramens = [
 { id: 4, name: "Nirvana Ramen", restaurant: "Fangu", image: "nirvana.jpg", rating: 3, comment: "Tasty!" },
     { id: 5, name: "Shoyu Ramen", restaurant: "Shanghai", image: "shoyu.jpg", rating: 4, comment: "Nutritious!" },
 ];  
+document.addEventListener("DOMContentLoaded", () => {
 // Function to display ramen images in the menu
 function displayRamens() {
     const menuDiv = document.getElementById("ramen-menu");
@@ -100,7 +101,7 @@ ramenUpdating.rating = inputs[3].value;
     }
     displayRamens();
 };
-document.addEventListener("DOMContentLoaded", () => {
+
     displayRamens();
 
     document.getElementById("add-btn").addEventListener("click", addRamen);
